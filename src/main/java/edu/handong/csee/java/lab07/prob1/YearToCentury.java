@@ -4,8 +4,8 @@ import java.util.Scanner;
 public class YearToCentury {
 
 	int year;
-	public void IsCentury() {
-		int century;
+	public void IsCentury(int century) {
+		
 		
 	}
 	public static void main(String[] args) {
