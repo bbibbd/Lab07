@@ -1,4 +1,5 @@
-package edu.hadnong.csee.java.lab07.prob2;
+package edu.hadnong.csee.java.lab07.prob2;	// name of the package and the directory where the class file will be saved
+
 
 public class Chicken {
 	

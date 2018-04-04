@@ -3,10 +3,10 @@ import java.util.Random;
 public class Attendance {
 
 
-	private String name="";
-	private int year = 0;
-	private String student_id = "";
-	private int missed = 0;
+	private String name;
+	private int year;
+	private String student_id;
+	private int missed;
 	
 	public Attendance() {
 		this.name = "";
@@ -41,7 +41,7 @@ public class Attendance {
 	public void passOrNot(String name, int year, int missed) {
 		if(missed>6) {
 			System.out.println("I'm sorry "+ name + ". You fail this course");
-			System.out.println("numver of absence: "+ missed);
+			System.out.println("number of absence: "+ missed);
 		}
 		else	System.out.println("We'll see about the grade, "+name);
 	}
