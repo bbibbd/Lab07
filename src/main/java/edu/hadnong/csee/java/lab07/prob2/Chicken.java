@@ -1,39 +1,61 @@
 package edu.hadnong.csee.java.lab07.prob2;	// name of the package and the directory where the class file will be saved
 
 /**
- * This Class will print out the information of the menu of chickens, prices and evaluations
+ * This Class will print out the information of the menu of chickens, prices and evaluations.
  * @author KKB
  *
  */
 public class Chicken {	//declare the class named Chicken
 	
-	
 	private String name;	//declare the string variable 'name' to get the name of the chicken
 	private double price;	//declare the double variable 'price' to get the price of the chicken
 	private int stars;		//declare the integer value 'stars' to get evaluations of the chicken
 	
+	/**
+	 * This constructor sets name, price and rating of the chicken.
+	 */
 	public Chicken(String name, double price, int stars) {	//declare the constructor
 		this.name = name;	//put the name to the class variable 'name'
 		this.price = price;	//put the price to the class variable 'price'
 		this.stars = stars;	//put the rating to the class variable 'stars'
 	}
 	
+	/**
+	 * This getter method returns the name.
+	 * @return
+	 */
 	public String getName() {	//declare the getter method
 		return name;	//return the name value
 	}
 
+	/**
+	 *This getter method returns the price.
+	 * @return
+	 */
 	public double getPrice() {	//declare the getter method
 		return price;	//return the price value
 	}
 
+	/**
+	 * This getter method returns the stars(rating of the chicken)
+	 * @return
+	 */
 	public int getStars() {	//declare the getter method
 		return stars;	//return the stars value
 	}
 	
+	/**
+	 * This setter method sets the stars(rating) to class variables 'stars'
+	 * @param stars
+	 */
 	public void setStars(int stars) {	//declare the setter method
 		this.stars = stars;	//set the stars to the class value 'stars'
 	}
 	
+	/**
+	 * This main method instantiates and initiates each menu, and set the stars, and prints out the ratings
+	 * @param args
+	 */
 	public static void main(String[] args) {	//declare the main method
 		Chicken menu1 = new Chicken("Cheese_mustard",16000.00,5);	//instantiate and initiate menu 1
 		Chicken menu2 = new Chicken("Honey_mustard",16000.00,5);	//instantiate and initiate menu 2
