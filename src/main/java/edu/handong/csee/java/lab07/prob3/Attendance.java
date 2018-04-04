@@ -15,7 +15,7 @@ public class Attendance {	//declare the class Attendance
 	private int missed;	//declare the integer variable 'missed'
 	
 	/**
-	 * the empty constructor to make it possible to instantiate the class with no parameters
+	 * The empty constructor to make it possible to instantiate the class with no parameters
 	 */
 	public Attendance() {	//declare the constructor
 		name = "";	//initiate the class variable name to ""
@@ -24,6 +24,9 @@ public class Attendance {	//declare the class Attendance
 		missed=0;	//initiate the class variable missed to 0
 	}
 	
+	/**
+	 * This constructor will set the name, year, id, number of missed class of the students
+	 */
 	public Attendance(String name, int year, String student_id, int missed) {	//declare the constructor
 		this.name = name;	//set name to class variable 'name'
 		this.year = year;	//set year to class variable 'year'
@@ -31,22 +34,40 @@ public class Attendance {	//declare the class Attendance
 		this.missed = missed;	//set missed to class variable 'missed'
 	}
 	
+	/**
+	 * This getter method returns the name of the students
+	 * @return
+	 */
 	public String getName() {	//declare a getter method
 		return name;	//return name
 	}
 
+	/**
+	 * This getter method returns the year of the students
+	 * @return
+	 */
 	public int getYear() {	//declare a getter method
 		return year;	//return the year
 	}
 
+	/**
+	 * This getter method returns the student's id of the students
+	 * @return
+	 */
 	public String getStudent_id() {	//declare a getter method
 		return student_id;	//return the student_id
 	}
 
+	/**
+	 * This getter method returns the number of the missed class of the students
+	 * @return
+	 */
 	public int getMissed() {	//declare a getter method
 		return missed;	//return the missed
 	}
-	
+	/**
+	 * This method will get name, year, and number of the missed class of the students and print out whether he or she is passed or not
+	 */
 	public void passOrNot(String name, int year, int missed) {	//declare the method
 		if(missed>6) {	//if the number of the absence is bigger than 6
 			System.out.println("I'm sorry "+ name + ". You fail this course");	//print out the failure massage
@@ -55,6 +76,10 @@ public class Attendance {	//declare the class Attendance
 		else	System.out.println("We'll see about the grade, "+name);	//else, print out the massage 
 	}
 	
+	/**
+	 * this main method will instantiate and initiate each student, and print out whether the student is passed or not 
+	 * @param args
+	 */
 	public static void main(String[] args) {	//declare the main method
 
 		Random missed = new Random();	//instantiate Random to missed to randomly generate the number of missed class
